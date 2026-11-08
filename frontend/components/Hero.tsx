@@ -1,3 +1,4 @@
+import Button from "./Button";
 export default function Hero() {
   return (
     <section className="text-center py-24">
@@ -9,9 +10,8 @@ export default function Hero() {
         Upload datasets and receive AI-powered analytics.
       </p>
 
-      <button className="bg-blue-600 px-6 py-3 rounded-lg">
-        Upload Dataset
-      </button>
+      <Button text="Upload Dataset" />
+
     </section>
   );
 }

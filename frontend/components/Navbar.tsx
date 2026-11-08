@@ -1,17 +1,30 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-10 py-5 border-b border-slate-700">
-      <h1 className="text-2xl font-bold text-blue-500">
+      <Link
+        href="/"
+        className="text-2xl font-bold text-blue-500"
+      >
         InsightAI
-      </h1>
+      </Link>
 
-      <div className="flex gap-5">
-        <button>Features</button>
-        <button>Dashboard</button>
+      <div className="flex gap-5 items-center">
+        <Link href="/">
+          Home
+        </Link>
 
-        <button className="bg-blue-600 px-4 py-2 rounded-lg">
+        <Link href="/dashboard">
+          Dashboard
+        </Link>
+
+        <Link
+          href="/login"
+          className="bg-blue-600 px-4 py-2 rounded-lg"
+        >
           Login
-        </button>
+        </Link>
       </div>
     </nav>
   );

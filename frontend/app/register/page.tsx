@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function RegisterPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-slate-900 text-white">
@@ -27,6 +28,12 @@ export default function RegisterPage() {
         <button className="w-full bg-green-600 p-3 rounded">
           Register
         </button>
+        <p className="mt-4 text-center">
+            Already have an account?{" "}
+            <Link href="/login" className="text-blue-400">
+                Login
+            </Link>
+            </p>
       </div>
     </main>
   );
